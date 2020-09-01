@@ -3,7 +3,8 @@
     "description": "An EXIF library in pure PHP",
     "type": "library",
     "require": {
-        "php": ">=7.3"
+        "php": ">=7.3",
+        "mdurrant/php-binary-reader": "^1.0"
     },
     "require-dev": {
         "vimeo/psalm": "^3.14",
