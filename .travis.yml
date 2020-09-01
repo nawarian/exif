@@ -1,0 +1,18 @@
+os: linux
+dist: xenial
+language: php
+
+php:
+  - 7.3
+  - 7.4
+  - nightly
+  - hhvm-3.30 # see: https://hhvm.com/blog/2018/09/12/end-of-php-support-future-of-hack.html
+
+install:
+  - composer install
+
+script:
+  - php vendor/bin/psalm
+  - php vendor/bin/phpcs
+  - php vendor/bin/phpunit
+
