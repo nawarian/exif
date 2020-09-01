@@ -6,6 +6,10 @@ php:
   - 7.3
   - 7.4
 
+before_install:
+  - git submodule init
+  - git submodule update
+
 install:
   - composer install
 
