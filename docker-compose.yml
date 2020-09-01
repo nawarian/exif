@@ -1,0 +1,16 @@
+version: '3'
+services:
+  composer:
+    image: composer:latest
+    environment:
+      - COMPOSER_CACHE_DIR=/app/.cache/composer
+    restart: never
+    volumes:
+      - .:/app
+
+  php:
+    image: php:7.3-alpine
+    restart: never
+    volumes:
+      - .:/app
+    working_dir: /app

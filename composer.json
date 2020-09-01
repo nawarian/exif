@@ -1,0 +1,29 @@
+{
+    "name": "nawarian/exif",
+    "description": "An EXIF library in pure PHP",
+    "type": "library",
+    "require": {
+        "php": ">=7.3"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^3.14",
+        "phpunit/phpunit": "^9.3",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "license": "GPL-3",
+    "authors": [
+        {
+            "name": "Nawarian",
+            "email": "nickolas@phpsp.org.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
+    },
+    "autoload": {
+        "files": ["library.php"]
+    }
+}
